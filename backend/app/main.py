@@ -7,11 +7,11 @@ from app.services.embeddings_service import create_vector_store
 from app.services.chat_service import ask_pdf
 from app.models.question import QuestionRequest
 from fastapi.middleware.cors import CORSMiddleware
-from services.pdf_services import read_pdf
-from services.chunk_service import split_documents
-from services.embeddings_service import create_vector_store
-from services.chat_service import ask_pdf
-from models.question import QuestionRequest
+from backend.app.services.pdf_services import read_pdf
+from backend.app.services.chunk_service import split_documents
+from backend.app.services.embeddings_service import create_vector_store
+from backend.app.services.chat_service import ask_pdf
+from backend.app.models.question import QuestionRequest
 
 app = FastAPI(
     title="RAG PDF Chatbot API",
