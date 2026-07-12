@@ -1,11 +1,11 @@
-from app.services.pdf_services import read_pdf
-from app.services.chunk_service import split_documents
+
+
 from fastapi import FastAPI
 import os
 from fastapi import FastAPI, UploadFile, File
-from app.services.embeddings_service import create_vector_store
-from app.services.chat_service import ask_pdf
-from app.models.question import QuestionRequest
+
+
+
 from fastapi.middleware.cors import CORSMiddleware
 from backend.app.services.pdf_services import read_pdf
 from backend.app.services.chunk_service import split_documents
